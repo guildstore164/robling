@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sakura Store | Order Gamepass</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+  :root {
+    --pink-light: #ffd6dc;
+    --pink-primary: #ff4d6d;
+    --bg: #fff0f3;
+    --text-dark: #222;
+    --text-muted: #666;
+    --border-radius: 30px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  main {
+    background: white;
+    border-radius: var(--border-radius);
+    max-width: 420px;
+    width: 100%;
+    padding: 40px 30px 50px;
+    box-shadow: 0 16px 32px rgb(255 77 109 / 0.15);
+  }
+
+  .label-preorder {
+    display: inline-block;
+    background: var(--pink-light);
+    color: var(--pink-primary);
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 8px;
+    color: var(--pink-primary);
+    text-align: center;
+  }
+
+  p.description {
+    text-align: center;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin: 0 0 28px;
+    line-height: 1.4;
+  }
+
+  .info-card {
+    border: 1.5px solid var(--pink-light);
+    border-radius: var(--border-radius);
+    padding: 14px 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    color: var(--pink-primary);
+    cursor: default;
+  }
+  .info-card svg {
+    flex-shrink: 0;
+  }
+
+  button.continue-btn {
+    background: linear-gradient(90deg, #ff375b 0%, #ff4d6d 100%);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 16px 0;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: background-color 0.25s ease;
+  }
+  button.continue-btn:hover {
+    background-color: #e63d62;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"] {
+    border: 1.5px solid var(--pink-light);
+    border-radius: var(--border-radius);
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-dark);
+    outline-offset: 2px;
+    transition: border-color 0.3s ease;
+  }
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus {
+    border-color: var(--pink-primary);
+  }
+
+  input[type="range"] {
+    width: 100%;
+    accent-color: var(--pink-primary);
+  }
+
+  .slider-value {
+    font-weight: 700;
+    color: var(--pink-primary);
+    text-align: center;
+  }
+
+  .notes {
+    background: var(--pink-light);
+    color: #462432;
+    border-radius: var(--border-radius);
+    padding: 16px 24px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 18px;
+    font-weight: 500;
+  }
+  .notes strong {
+    font-weight: 700;
+  }
+
+  button.submit-btn {
+    background: linear-gradient(90deg, #ff375b 0%, #ff4d6d 100%);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 16px 0;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background-color 0.25s ease;
+  }
+  button.submit-btn:hover {
+    background-color: #e63d62;
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <span class="label-preorder">GAMEPASS PRE-ORDER</span>
+
+  <h1>Beli Robux Gamepass PO</h1>
+  <p class="description">
+    Lagi cari Robux murah? Pre-Order via Gamepass solusinya!<br />
+    Hemat, aman, puas!
+  </p>
+
+  <div class="info-card">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#ff4d6d">
+      <circle cx="10" cy="10" r="8"></circle>
+      <path d="M10 6v4l2 2"></path>
+    </svg>
+    Rp 5.206 / 50 R$
+  </div>
+  <div class="info-card">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#ff4d6d">
+      <rect x="3" y="6" width="14" height="12" rx="2" ry="2"></rect>
+      <path d="M3 6l7 6 7-6"></path>
+    </svg>
+    Stock Tersedia (Unlimited)
+  </div>
+
+  <button class="continue-btn" id="btnContinue">Lanjutkan</button>
+
+  <form id="orderForm" style="display:none" novalidate>
+    <input type="text" id="username" placeholder="Username Roblox" required autocomplete="off" />
+    <input type="number" id="amount" min="50" step="50" value="50" required />
+    <input type="range" id="amountRange" min="50" max="1000" step="50" value="50" />
+    <div class="slider-value" id="sliderValue">50 Robux</div>
+    <input type="tel" id="whatsapp" placeholder="No WhatsApp" pattern="[0-9+ ]+" required autocomplete="off" />
+    <input type="email" id="email" placeholder="Email Notifikasi (Opsional)" autocomplete="off" />
+
+    <div class="notes">
+      <strong>Catatan:</strong><br />
+      Robux Gamepass membutuhkan waktu untuk diproses:<br />
+      1. Akan muncul <strong>pending</strong> pertama di akunmu dalam <strong>2–3 hari</strong> setelah pembayaran.<br />
+      2. Setelah itu, Robux akan masuk sepenuhnya ±<strong>5 hari</strong> berikutnya.<br />
+      Jadi, total estimasi waktu dari pembayaran hingga Robux benar-benar masuk ke akunmu adalah sekitar <strong>7–9 hari</strong>.
+    </div>
+
+    <button type="submit" class="submit-btn">Kirim Pesanan</button>
+  </form>
+</main>
+
+<script>
+  const btnContinue = document.getElementById('btnContinue');
+  const orderForm = document.getElementById('orderForm');
+  const amountInput = document.getElementById('amount');
+  const amountRange = document.getElementById('amountRange');
+  const sliderValue = document.getElementById('sliderValue');
+
+  btnContinue.addEventListener('click', () => {
+    btnContinue.style.display = 'none';
+    orderForm.style.display = 'flex';
+  });
+
+  // Sync slider & input
+  amountRange.addEventListener('input', () => {
+    amountInput.value = amountRange.value;
+    sliderValue.textContent = `${amountRange.value} Robux`;
+  });
+  amountInput.addEventListener('input', () => {
+    let val = amountInput.value;
+    if(val < 50) val = 50;
+    if(val > 1000) val = 1000;
+    val = Math.round(val / 50) * 50;
+    amountInput.value = val;
+    amountRange.value = val;
+    sliderValue.textContent = `${val} Robux`;
+  });
+
+  // Handle form submission
+  orderForm.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const username = document.getElementById('username').value.trim();
+    const amount = parseInt(amountInput.value);
+    const whatsapp = document.getElementById('whatsapp').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if(!username || !amount || !whatsapp) {
+      alert('Mohon lengkapi Username, Jumlah Robux, dan No WhatsApp.');
+      return;
+    }
+
+    // Save order to localStorage (simulating DB)
+    let orders = JSON.parse(localStorage.getItem('sakura_orders') || '{}');
+    const token = 'TRX' + Date.now();
+
+    orders[token] = {
+      time: new Date().toLocaleString(),
+      user: username,
+      amt: amount,
+      wa: whatsapp,
+      email: email,
+      admin: 'Admin Sakura'
+    };
+
+    localStorage.setItem('sakura_orders', JSON.stringify(orders));
+
+    alert('Pesanan berhasil dikirim! Terima kasih sudah memesan.');
+
+    // Reset form & scroll top
+    orderForm.reset();
+    amountInput.value = 50;
+    amountRange.value = 50;
+    sliderValue.textContent = '50 Robux';
+    orderForm.style.display = 'none';
+    btnContinue.style.display = 'block';
+    window.scrollTo(0,0);
+  });
+</script>
+
+</body>
+</html>
